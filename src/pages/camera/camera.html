@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Camera</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <img src="{{base64Image}}" title="Foto">
+
+    </ion-item>
+
+  <div>
+    <button ion-button block (click)="presentActionSheet()" color="danger">Upload</button>
+  </div>
+
+ </ion-list>
+
+
+
+</ion-content>
